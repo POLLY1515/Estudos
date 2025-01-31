@@ -1,15 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
   const [tarefas, setTarefas] = useState([]);
   const [input, setInput] = useState("");
 
-  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    const tarefasStorage = JSON.parse(localStorage.getItem('@tarefa'));
+
+    if(tarefasStorage){
+      setTarefas(tarefasStorage);
+    }  //se o local storage tiver algum item com a chave '@tarefa', ele vai setar esse item
+    // como tarefas inicial
+
+
+  },[]);
+
+//toda vez que a a plicacao for montada, o useefect sera chamado
+  useEffect(() =>{
+    localStorage.setItem('@tarefa', JSON.stringify(tarefas))
+  },[tarefas]);
 
   function handleRegister(e) {
     e.preventDefault(); //evita que o formulário seja recarregado
 
-    setTarefas([...tarefas, input])
+    setTarefas([...tarefas, input]);
     setInput('');
   }
 
