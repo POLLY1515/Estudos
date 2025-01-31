@@ -50,3 +50,16 @@ let palavras = ["Joana", "Pedro", "Bia", "Barbara", "jose", "joe"];
  });
 
  console.log(filtradas)
+
+ console.log("======================================================");
+
+ //Includes, startsWith, endsWith   
+  //includes verifica se um item existe no array, ele é case sensitive
+  //startsWith verifica se um item comeca com determinado valor
+  //endsWith verifica se um item termina com determinado valor
+
+  let nomes = ["Poliana", "Isais", "Matheus", "Raquel"];
+  let item = nomes.includes("Poliana");
+
+ console.log(item);
+ 
