@@ -27,4 +27,26 @@ let numeros = [5 ,8, 2];
  console.log("======================================================");
 
  //Find busca em uma lista, e devolve o primeiro item que encontra
- 
+//devolve apenas um item
+ let listagem = [5,3, "Jose", 2, " Maria"];
+
+ let busca = listagem.find((item)=>{
+
+    //condicao
+    return item === "Jose"
+ });
+
+ console.log(busca);
+
+ console.log("======================================================");
+//Filter
+ //Filter filtra um array, e devolve um novo array com os valores que satisfazem a condicao
+
+let palavras = ["Joana", "Pedro", "Bia", "Barbara", "jose", "joe"];
+
+ let filtradas = palavras.filter((item)=>{
+
+    return item.length <= 4;
+ });
+
+ console.log(filtradas)
