@@ -1,16 +1,13 @@
-import Menu from "../components/layout/Menu/menu"
-
-
+import Menu from "../components/layout/Menu/menu";
+import Content from "../components/layout/Content/content";
+import "./App.css";
 function App() {
-
-  <div className="App">
-
-  </div>
   return (
-    <>
-     <Menu />
-    </>
-  )
+    <div className="App">
+      <Menu />
+      <Content />
+    </div>
+  );
 }
 
-export default App
+export default App;

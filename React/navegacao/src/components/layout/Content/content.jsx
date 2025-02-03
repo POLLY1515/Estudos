@@ -1,7 +1,9 @@
+import './content.css';
+
 export default function Content(){
     return(
         <main className="Content">
-            Componente content
+            <h1>Componente content</h1>
         </main>
     );
 }

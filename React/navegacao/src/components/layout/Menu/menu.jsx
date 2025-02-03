@@ -1,8 +1,18 @@
+import './menu.css';
 
 export default function Menu(){
     return(
         <div className="Menu">
-            <h1>Componente menu</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/">Sobre</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     );
 }
