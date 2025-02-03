@@ -3,7 +3,7 @@ import './content.css';
 export default function Content(){
     return(
         <main className="Content">
-            <h1>Componente content</h1>
+            <h1>ola</h1>
         </main>
     );
 }
