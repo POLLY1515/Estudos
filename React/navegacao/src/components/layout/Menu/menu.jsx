@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './menu.css';
 
 export default function Menu(){
@@ -6,10 +7,16 @@ export default function Menu(){
             <nav>
                 <ul>
                     <li>
-                        <a href="/">Inicio</a>
+                        <Link to="/">Inicio</Link>
                     </li>
                     <li>
-                        <a href="/">Sobre</a>
+                    <Link to="/param/id">Param #01</Link>
+                    </li>
+                    <li>
+                    <Link to="/">Param #02</Link>
+                    </li>
+                    <li>
+                    <Link to="/about">Sobre</Link>
                     </li>
                 </ul>
             </nav>
