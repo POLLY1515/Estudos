@@ -18,6 +18,9 @@ export default function Menu(){
                     <li>
                     <Link to="/about">Sobre</Link>
                     </li>
+                    <li>
+                    <Link to="/naoExiste">Não Existe</Link>
+                    </li>
                 </ul>
             </nav>
         </div>
